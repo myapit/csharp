@@ -33,8 +33,8 @@ namespace HiWorld
 			// /Version versionInfo = Assembly.GetExecutingAssembly().GetName().Version;
 			
 			//statusStrip1.Items[0].Alignment = Right;
-			statusStrip1.Items[0].Text = "ver:"+Application.ProductVersion;
-			statusStrip1.Items[2].Text = DateTime.Today.ToString();
+			///statusStrip1.Items[0].Text = "ver:"+Application.ProductVersion;
+			////statusStrip1.Items[2].Text = DateTime.Today.ToString();
 			 
 		}
 		void Button1Click(object sender, EventArgs e)

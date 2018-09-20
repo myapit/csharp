@@ -72,12 +72,17 @@ namespace HiWorld
         private void txtAutoEnter_KeyPress(object sender, KeyPressEventArgs e)
         {
             System.Diagnostics.Debug.Print("KeyDown: " + e.KeyChar.ToString());
+            e.Handled = !char.IsDigit(e.KeyChar);
             //if(e.KeyChar == "A")
             //{
             //	MessageBox.Show("KeyDown: " + e.KeyChar.ToString());
             //}
            
         }
+		void Button1Click(object sender, EventArgs e)
+		{
+	
+		}
 
 	}
 }

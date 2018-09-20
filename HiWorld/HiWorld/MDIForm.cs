@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Resources;
 
 namespace HiWorld
 {
@@ -27,6 +28,33 @@ namespace HiWorld
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+			//Image mybg = Resources.beskat;
+			
+			//Bitmap mybg = new Bitmap(
+			//	System.Reflection.Assembly.GetEntryAssembly().GetManifestResourceStream("HiWorld.Resources1.beskat")
+			//);
+				
+//			string[] all = System.Reflection.Assembly.GetEntryAssembly().
+//				  GetManifestResourceNames();
+//				
+//				foreach (string one in all) {
+//				    MessageBox.Show(one);
+//				}
+//			
+//			Object rm = global::Properties.Resources.ResourceManager.GetObject("beskat");
+//			Bitmap myImage = (Bitmap)rm;
+//			Image image = myImage;
+							
+//			foreach (Control cntrl in this.Controls)
+//            {
+//                if (cntrl is MdiClient)
+//                {
+//                    cntrl.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+//                   // cntrl.BackgroundImage = Properties.Resources.Apartment_Rentals_For_Families;
+//                }
+//            }
+//						
+			
 			statusStrip1.Items[0].Text = "ver:"+Application.ProductVersion;
 			statusStrip1.Items[2].Text = DateTime.Today.ToString();
 			
