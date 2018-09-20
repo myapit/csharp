@@ -90,7 +90,7 @@ namespace HiWorld
 			this.processFormToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(747, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(800, 24);
 			this.menuStrip1.TabIndex = 2;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -143,6 +143,7 @@ namespace HiWorld
 			this.openForm2ToolStripMenuItem.Name = "openForm2ToolStripMenuItem";
 			this.openForm2ToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
 			this.openForm2ToolStripMenuItem.Text = "Open Form 2";
+			this.openForm2ToolStripMenuItem.Click += new System.EventHandler(this.OpenForm2ToolStripMenuItemClick);
 			// 
 			// statusStrip1
 			// 
@@ -150,10 +151,10 @@ namespace HiWorld
 			this.toolStripStatusLabel1,
 			this.toolStripStatusLabel2,
 			this.statusBarVersion});
-			this.statusStrip1.Location = new System.Drawing.Point(0, 256);
+			this.statusStrip1.Location = new System.Drawing.Point(0, 368);
 			this.statusStrip1.Name = "statusStrip1";
 			this.statusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.statusStrip1.Size = new System.Drawing.Size(747, 24);
+			this.statusStrip1.Size = new System.Drawing.Size(800, 24);
 			this.statusStrip1.TabIndex = 4;
 			this.statusStrip1.Text = "statusStrip1";
 			// 
@@ -182,13 +183,14 @@ namespace HiWorld
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(747, 280);
+			this.ClientSize = new System.Drawing.Size(800, 392);
 			this.Controls.Add(this.statusStrip1);
 			this.Controls.Add(this.menuStrip1);
 			this.IsMdiContainer = true;
 			this.MainMenuStrip = this.menuStrip1;
 			this.Name = "MDIForm";
 			this.Text = "MDIForm";
+			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.contextMenuStrip1.ResumeLayout(false);
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();

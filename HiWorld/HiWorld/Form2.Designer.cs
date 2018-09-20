@@ -14,7 +14,9 @@ namespace HiWorld
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.TextBox txtAutoEnter;
+		private System.Windows.Forms.Label lblOutput;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -37,27 +39,54 @@ namespace HiWorld
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.button1 = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
+			this.txtAutoEnter = new System.Windows.Forms.TextBox();
+			this.lblOutput = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
-			// button1
+			// label1
 			// 
-			this.button1.Location = new System.Drawing.Point(76, 78);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 0;
-			this.button1.Text = "button1";
-			this.button1.UseVisualStyleBackColor = true;
+			this.label1.Location = new System.Drawing.Point(42, 38);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(94, 23);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Enter Number :";
+			// 
+			// txtAutoEnter
+			// 
+			this.txtAutoEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtAutoEnter.Location = new System.Drawing.Point(153, 38);
+			this.txtAutoEnter.MaxLength = 12;
+			this.txtAutoEnter.Name = "txtAutoEnter";
+			this.txtAutoEnter.Size = new System.Drawing.Size(213, 31);
+			this.txtAutoEnter.TabIndex = 1;
+			this.txtAutoEnter.TextChanged += new System.EventHandler(this.TxtAutoEnterTextChanged);
+			this.txtAutoEnter.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAutoEnter_KeyDown);
+			this.txtAutoEnter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAutoEnter_KeyPress);
+			// 
+			// lblOutput
+			// 
+			this.lblOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.lblOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lblOutput.Location = new System.Drawing.Point(42, 111);
+			this.lblOutput.Name = "lblOutput";
+			this.lblOutput.Size = new System.Drawing.Size(326, 128);
+			this.lblOutput.TabIndex = 2;
+			this.lblOutput.Text = "output here";
 			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(284, 261);
-			this.Controls.Add(this.button1);
+			this.ClientSize = new System.Drawing.Size(623, 305);
+			this.Controls.Add(this.lblOutput);
+			this.Controls.Add(this.txtAutoEnter);
+			this.Controls.Add(this.label1);
 			this.Name = "Form2";
 			this.Text = "Form2";
+			this.Load += new System.EventHandler(this.Form2Load);
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 	}

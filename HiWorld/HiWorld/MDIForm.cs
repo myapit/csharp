@@ -29,6 +29,7 @@ namespace HiWorld
 			//
 			statusStrip1.Items[0].Text = "ver:"+Application.ProductVersion;
 			statusStrip1.Items[2].Text = DateTime.Today.ToString();
+			
 		}
 		void ExitToolStripMenuItemClick(object sender, EventArgs e)
 		{
@@ -43,6 +44,12 @@ namespace HiWorld
 			Form MForm = new MainForm();
 			MForm.MdiParent = this;
 			MForm.Show();
+		}
+		void OpenForm2ToolStripMenuItemClick(object sender, EventArgs e)
+		{
+			Form frm1 = new Form2();
+			frm1.MdiParent = this;
+			frm1.Show();
 		}
 	}
 }
