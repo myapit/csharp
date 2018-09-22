@@ -79,5 +79,14 @@ namespace HiWorld
 			frm1.MdiParent = this;
 			frm1.Show();
 		}
+		
+		
+		protected override void OnFormClosing(FormClosingEventArgs e)
+		{
+			if ( MessageBox.Show("Are you sure to close this application ?", "Close Confirmation", MessageBoxButtons.YesNo) == DialogResult.No)
+			{
+				e.Cancel = true;
+			}
+		}
 	}
 }
