@@ -61,11 +61,11 @@ namespace HiWorld
 		}
 		void ExitToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			DialogResult confirm = MessageBox.Show("Are you sure to close this application ?","Exit App", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-			if (confirm == DialogResult.Yes)
-			{
+			//DialogResult confirm = MessageBox.Show("Are you sure to close this application ?","Exit App", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+			//if (confirm == DialogResult.Yes)
+			//{
 				System.Windows.Forms.Application.Exit();
-			}
+			//}
 		}
 		void OpenMainFormToolStripMenuItemClick(object sender, EventArgs e)
 		{
@@ -87,6 +87,10 @@ namespace HiWorld
 			{
 				e.Cancel = true;
 			}
+		}
+		void NewToolStripButtonClick(object sender, EventArgs e)
+		{
+			MessageBox.Show("New ?");
 		}
 	}
 }
