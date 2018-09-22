@@ -57,6 +57,7 @@ namespace HiWorld
             {
             	MessageBox.Show("KeyDown: " + e.KeyData.ToString());
             	lblOutput.Text = txtAutoEnter.Text;
+            	txtAutoEnter.Clear();
             }
         }
         
