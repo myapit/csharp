@@ -128,5 +128,9 @@ namespace HiWorld
 		{
 			MessageBox.Show("New ?");
 		}
+		void AboutToolStripMenuItemClick(object sender, EventArgs e)
+		{
+	
+		}
 	}
 }
