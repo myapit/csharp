@@ -17,6 +17,7 @@ namespace HiWorld
 		private System.Windows.Forms.Button button1;
 		public System.Windows.Forms.TextBox textBox1;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.Button btnGeneratePDF;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -42,11 +43,12 @@ namespace HiWorld
 			this.button1 = new System.Windows.Forms.Button();
 			this.textBox1 = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
+			this.btnGeneratePDF = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(61, 79);
+			this.button1.Location = new System.Drawing.Point(429, 54);
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(75, 23);
 			this.button1.TabIndex = 0;
@@ -56,7 +58,7 @@ namespace HiWorld
 			// 
 			// textBox1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(61, 40);
+			this.textBox1.Location = new System.Drawing.Point(429, 15);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(100, 20);
 			this.textBox1.TabIndex = 1;
@@ -64,17 +66,28 @@ namespace HiWorld
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(72, 163);
+			this.label1.Location = new System.Drawing.Point(440, 138);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(100, 23);
 			this.label1.TabIndex = 2;
 			this.label1.Text = "label1";
 			// 
+			// btnGeneratePDF
+			// 
+			this.btnGeneratePDF.Location = new System.Drawing.Point(12, 12);
+			this.btnGeneratePDF.Name = "btnGeneratePDF";
+			this.btnGeneratePDF.Size = new System.Drawing.Size(222, 39);
+			this.btnGeneratePDF.TabIndex = 3;
+			this.btnGeneratePDF.Text = "Generate PDF BarCode";
+			this.btnGeneratePDF.UseVisualStyleBackColor = true;
+			this.btnGeneratePDF.Click += new System.EventHandler(this.Button2Click);
+			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(520, 263);
+			this.ClientSize = new System.Drawing.Size(844, 331);
+			this.Controls.Add(this.btnGeneratePDF);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.button1);

@@ -133,18 +133,18 @@ namespace HiWorld
 			// aboutToolStripMenuItem
 			// 
 			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.aboutToolStripMenuItem.Text = "&About";
 			// 
 			// toolStripMenuItem1
 			// 
 			this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-			this.toolStripMenuItem1.Size = new System.Drawing.Size(104, 6);
+			this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
 			// 
 			// exitToolStripMenuItem
 			// 
 			this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-			this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+			this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.exitToolStripMenuItem.Text = "E&xit";
 			this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItemClick);
 			// 
@@ -159,16 +159,18 @@ namespace HiWorld
 			// 
 			// openMainFormToolStripMenuItem
 			// 
+			this.openMainFormToolStripMenuItem.Image = global::HiWorld.Resource1.coffee;
 			this.openMainFormToolStripMenuItem.Name = "openMainFormToolStripMenuItem";
-			this.openMainFormToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
-			this.openMainFormToolStripMenuItem.Text = "Open Main Form";
+			this.openMainFormToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+			this.openMainFormToolStripMenuItem.Text = "PDF Bar Code Generator";
 			this.openMainFormToolStripMenuItem.Click += new System.EventHandler(this.OpenMainFormToolStripMenuItemClick);
 			// 
 			// openForm2ToolStripMenuItem
 			// 
+			this.openForm2ToolStripMenuItem.Image = global::HiWorld.Resource1.coffee;
 			this.openForm2ToolStripMenuItem.Name = "openForm2ToolStripMenuItem";
-			this.openForm2ToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
-			this.openForm2ToolStripMenuItem.Text = "Open Form 2";
+			this.openForm2ToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+			this.openForm2ToolStripMenuItem.Text = "Scan Form";
 			this.openForm2ToolStripMenuItem.Click += new System.EventHandler(this.OpenForm2ToolStripMenuItemClick);
 			// 
 			// statusStrip1

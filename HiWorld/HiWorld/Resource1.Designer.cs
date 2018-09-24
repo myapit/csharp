@@ -63,9 +63,139 @@ namespace HiWorld {
 		/// <summary>
 		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
 		/// </summary>
+		internal static System.Drawing.Icon calculator {
+			get {
+				object obj = ResourceManager.GetObject("calculator", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Bitmap.
+		/// </summary>
+		internal static System.Drawing.Bitmap coffee {
+			get {
+				object obj = ResourceManager.GetObject("coffee", resourceCulture);
+				return ((System.Drawing.Bitmap)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
+		internal static System.Drawing.Icon disc {
+			get {
+				object obj = ResourceManager.GetObject("disc", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
+		internal static System.Drawing.Icon diskette {
+			get {
+				object obj = ResourceManager.GetObject("diskette", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
 		internal static System.Drawing.Icon document {
 			get {
 				object obj = ResourceManager.GetObject("document", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
+		internal static System.Drawing.Icon document_1 {
+			get {
+				object obj = ResourceManager.GetObject("document_1", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
+		internal static System.Drawing.Icon document_delete {
+			get {
+				object obj = ResourceManager.GetObject("document_delete", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
+		internal static System.Drawing.Icon document_edit {
+			get {
+				object obj = ResourceManager.GetObject("document_edit", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
+		internal static System.Drawing.Icon document_search {
+			get {
+				object obj = ResourceManager.GetObject("document_search", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
+		internal static System.Drawing.Icon document_warning {
+			get {
+				object obj = ResourceManager.GetObject("document_warning", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
+		internal static System.Drawing.Icon folder_empty {
+			get {
+				object obj = ResourceManager.GetObject("folder_empty", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
+		internal static System.Drawing.Icon folder_warning {
+			get {
+				object obj = ResourceManager.GetObject("folder_warning", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
+		internal static System.Drawing.Icon home {
+			get {
+				object obj = ResourceManager.GetObject("home", resourceCulture);
+				return ((System.Drawing.Icon)(obj));
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+		/// </summary>
+		internal static System.Drawing.Icon mail {
+			get {
+				object obj = ResourceManager.GetObject("mail", resourceCulture);
 				return ((System.Drawing.Icon)(obj));
 			}
 		}

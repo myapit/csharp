@@ -69,15 +69,51 @@ namespace HiWorld
 		}
 		void OpenMainFormToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			Form MForm = new MainForm();
-			MForm.MdiParent = this;
-			MForm.Show();
+			bool isOpenForm = false;
+			
+			foreach( Form f in Application.OpenForms)
+			{
+				if (f.Name == "MainForm") 
+				{
+					isOpenForm = true;
+					f.BringToFront();
+					break;
+				}
+			}
+			
+			if (isOpenForm == false) 
+			{
+				Form MForm = new MainForm();
+				MForm.MdiParent = this;
+				MForm.Show();
+			}
+			
+			//menuStrip1.Items.Find("processFormToolStripMenuItem",true) = false;
+			
 		}
+		
 		void OpenForm2ToolStripMenuItemClick(object sender, EventArgs e)
 		{
-			Form frm1 = new Form2();
-			frm1.MdiParent = this;
-			frm1.Show();
+			bool isOpenForm = false;
+			
+			foreach( Form f in Application.OpenForms)
+			{
+				if (f.Name == "Form2") 
+				{
+					isOpenForm = true;
+					f.BringToFront();
+					break;
+				}
+			}
+			
+			if (isOpenForm == false)
+			{
+				Form frm1 = new Form2();
+				frm1.MdiParent = this;
+				frm1.Show();
+			}
+			
+			
 		}
 		
 		
